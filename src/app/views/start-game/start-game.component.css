@@ -92,8 +92,9 @@ li {
   transition: .4s;
   cursor: pointer;
   border: 5px solid var(--second-color);
-  width: 170px;
+  width: 10rem;
   border-radius: 10px;
+  margin-left: .5rem;
 }
 
 .animate__fadeIn_click {
@@ -102,18 +103,18 @@ li {
   animation-iteration-count: infinite;
   border: 5px solid var(--second-color);
   border-radius: 10px;
-  width: 170px;
+  width: 10rem;
 }
 
 .resetBtn:hover {
   border: 5px solid var(--second-color);
   border-radius: 10px;
-  width: 170px;
+  width: 10rem;
 }
 
 .game-board {
-  height: 500px;
-  width: 500px;
+  height: 27.8rem;
+  width: 27.8rem;
   border: 4px solid var(--second-color);
   border-radius: 30px;
   background-color: transparent;
@@ -124,7 +125,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 30px;
+  margin: .04rem;
 }
 
 .line {
@@ -293,7 +294,7 @@ li {
   }
 
   .resetBtn > li {
-    margin-left: 1.5rem;
+    margin: 0 0 .3rem 1rem;
     width: 100%;
   }
 
