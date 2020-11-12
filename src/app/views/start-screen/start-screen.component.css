@@ -1,0 +1,70 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title-space {
+  display: flex;
+  flex-direction: row;
+  caret-color: transparent;
+}
+
+.title-1, .title-2 {
+  margin-right: 15px;
+}
+
+.title-1, .title-2, .title-3 {
+  font-family: title-font;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  caret-color: transparent;
+}
+
+.start-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid var(--primary-color);
+  border-radius: 15px;
+  height: 80px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.start-space > p {
+  font-family: simple-font;
+  font-size: 6.5rem;
+  color: var(--second-color);
+  margin: -16px -10px 0 0;
+  caret-color: transparent;
+}
+
+.animate__fadeIn {
+  animation: fadeIn;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+
+.animate__fadeIn_click {
+  animation: fadeIn;
+  animation-duration: .3s;
+  animation-iteration-count: infinite;
+}
+
+@media (max-width: 500px) {
+  .title-1, .title-2, .title-3 {
+    font-size: 1.8rem;
+  }
+
+  .start-space {
+    height: 60px;
+    width: 180px;
+  }
+
+  .start-space > p {
+    font-size: 5.5rem;
+  }
+}

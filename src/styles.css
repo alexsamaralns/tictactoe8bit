@@ -1,0 +1,20 @@
+@font-face {
+  font-family: simple-font;
+  src: url(./assets/fonts/thin_pixel-7.ttf);
+}
+
+@font-face {
+  font-family: title-font;
+  src: url(./assets/fonts/WildWestPixel.ttf);
+}
+
+body {
+  margin: 0!important;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+}
+
+html, body {
+  height: 100%;
+}
