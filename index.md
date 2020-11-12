@@ -1,4 +1,5 @@
-## Welcome to GitHub Pages
+# TIC TAC TOE 
+#### 8bit Version
 
 You can use the [editor on GitHub](https://github.com/alexsamaralns/tictactoe8bit/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
