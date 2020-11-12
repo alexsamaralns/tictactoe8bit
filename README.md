@@ -1,2 +1,2 @@
 # tictactoe8bit
-Classic game Tic Tac Toe 8bit version
+Classic game <strong>Tic Tac Toe</strong>8bit version
