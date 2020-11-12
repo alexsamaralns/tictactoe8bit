@@ -1,11 +1,2 @@
-<html lang="en">
-<head>
-  <link rel="stylesheet" href="https://drive.google.com/file/d/1eSfXeFe-hy7gnU0CqgngscWlPwbSEs9Y/view?usp=sharing">
-</head>
-<body>
-  <div class="title">
-    <h1>TIC TAC TOE</h1>
-    <h3>8bit Version</h3>
-  </div>
-</body>
-</html>
+<h3><strong>Tic Tac Toe</strong> 8 bit Version</h4>
+<img src="https://user-images.githubusercontent.com/34780891/99007262-9c84d980-2522-11eb-907f-7796c4457701.png">
