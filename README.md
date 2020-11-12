@@ -20,3 +20,9 @@
 <p>The points panel identifies when it is the turn of each of the 2 players.<br>
   By default, player 1 is red and player 2 is yellow. Just below is the Reset Score button,<br>
   which has the function of resetting the score of the two players and restarting the game by clearing the symbols of all spaces.</p>
+<img src="https://user-images.githubusercontent.com/34780891/99008814-a6f4a280-2525-11eb-8deb-8b23386e2cc5.png"> 
+
+<p>The game is hosted using a free domain and can be accessed through the link: <a href="http://tictactoe8bit.000webhostapp.com">tictactoe8bit.000webhostapp.com</a>
+  
+<h3><strong>Layout</strong></h3>
+<p>The layout was developed to adapt to different dimensions of screens and also on mobile devices.</p>
