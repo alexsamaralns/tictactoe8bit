@@ -22,7 +22,20 @@
   which has the function of resetting the score of the two players and restarting the game by clearing the symbols of all spaces.</p>
 <img src="https://user-images.githubusercontent.com/34780891/99008814-a6f4a280-2525-11eb-8deb-8b23386e2cc5.png"> 
 
-<p>The game is hosted using a free domain and can be accessed through the link: <a href="http://tictactoe8bit.000webhostapp.com">tictactoe8bit.000webhostapp.com</a>
+<p>The game is hosted using a free domain and can be accessed through the link: <a href="http://tictactoe8bit.000webhostapp.com" target="_blank">tictactoe8bit.000webhostapp.com</a>
   
 <h3><strong>Layout</strong></h3>
 <p>The layout was developed to adapt to different dimensions of screens and also on mobile devices.</p>
+<img src="https://user-images.githubusercontent.com/34780891/99009552-f8516180-2526-11eb-896c-513710415486.png"> 
+
+<h3><strong>Keywords:</strong></h3>
+<ul>
+  <li>Angular</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>TypeScript</li>
+  <li>game</li>
+  <li>8bit</li>
+  <li>retro game</li>
+  <li>casual games</li>
+  <li>tic tac toe</li>
