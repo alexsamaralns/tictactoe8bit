@@ -1,0 +1,56 @@
+<div class="main">
+  <div class="cr cr-top cr-left cr-sticky" (click)="backStartScreen()"><p>Back</p></div>
+  <div class="info">
+    <div class="players-fields">
+      <div class="players">
+        <div class="player1">
+          <div class="player1-info">
+            <ul class="{{ turnP1 }}">
+              <li>PLAYER 1</li>
+              <li>{{ 'SCORE ' + scoreP1 }}</li>
+            </ul>
+          </div>
+        </div>
+        <div class="player2">
+          <div class="player2-info">
+            <ul class="{{ turnP2 }}">
+              <li>PLAYER 2</li>
+              <li>{{ 'SCORE ' + scoreP2 }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="resetScore">
+        <ul class="resetBtn {{ clickResetScore }}" (click)="resetScore()">
+          <li>RESET SCORE</li>
+        </ul>
+      </div>
+    </div>
+    <div class="board-title">
+      <div class="title-space">
+        <p class="title-1">Tic</p>
+        <p class="title-2">Tac</p>
+        <p class="title-3">Toe</p>
+      </div>
+      <div class="game-board">
+        <div class="board-place">
+          <div class="line">
+            <div class="A" id="0" (click)="clickSpace(0)"><p class="symbol {{ player[0] }}">{{ marks[0] }}</p></div>
+            <div class="B" id="1" (click)="clickSpace(1)"><p class="symbol {{ player[1] }}">{{ marks[1] }}</p></div>
+            <div class="C" id="2" (click)="clickSpace(2)"><p class="symbol {{ player[2] }}">{{ marks[2] }}</p></div>
+          </div>
+          <div class="line">
+            <div class="D" id="3" (click)="clickSpace(3)"><p class="symbol {{ player[3] }}">{{ marks[3] }}</p></div>
+            <div class="E" id="4" (click)="clickSpace(4)"><p class="symbol {{ player[4] }}">{{ marks[4] }}</p></div>
+            <div class="F" id="5" (click)="clickSpace(5)"><p class="symbol {{ player[5] }}">{{ marks[5] }}</p></div>
+          </div>
+          <div class="line">
+            <div class="G" id="6" (click)="clickSpace(6)"><p class="symbol {{ player[6] }}">{{ marks[6] }}</p></div>
+            <div class="H" id="7" (click)="clickSpace(7)"><p class="symbol {{ player[7] }}">{{ marks[7] }}</p></div>
+            <div class="I" id="8" (click)="clickSpace(8)"><p class="symbol {{ player[8] }}">{{ marks[8] }}</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

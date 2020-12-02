@@ -1,0 +1,110 @@
+<div class="main-screen">
+  <div class="content">
+    <ul class="clouds">
+      <li class="cloud"><img class="cloud-img1" src="./assets/img/cloud.png"></li>
+      <li class="cloud"><img class="cloud-img2" src="./assets/img/cloud.png"></li>
+      <li class="cloud"><img class="cloud-img3" src="./assets/img/cloud.png"></li>
+      <li class="cloud"><img class="cloud-img4" src="./assets/img/cloud.png"></li>
+      <li class="cloud"><img class="cloud-img5" src="./assets/img/cloud.png"></li>
+      <li class="cloud"><img class="cloud-img6" src="./assets/img/cloud.png"></li>
+      <li class="cloud"><img class="cloud-img7" src="./assets/img/cloud.png"></li>
+      <li class="cloud"><img class="cloud-img8" src="./assets/img/cloud.png"></li>
+      <li class="cloud"><img class="cloud-img9" src="./assets/img/cloud.png"></li>
+      <li class="cloud"><img class="cloud-img10" src="./assets/img/cloud.png"></li>
+      <li class="cloud"><img class="cloud-img11" src="./assets/img/cloud.png"></li>
+      <li class="cloud"><img class="cloud-img12" src="./assets/img/cloud.png"></li>
+    </ul>
+    <div class="top">
+      <div class="cr cr-top cr-left cr-sticky" (click)="backStartScreen()"><p>{{ screenRoute }}</p></div>
+      <div class="time-place {{ startScreen }}">
+        <div class="header-info">
+          <div class="time-space">
+            <div>
+              <p class="title-time">TIME</p>
+            </div>
+            <div class="time-cells">
+              <div class="cell-time {{ cell[0] }}"></div>
+              <div class="cell-time {{ cell[1] }}"></div>
+              <div class="cell-time {{ cell[2] }}"></div>
+              <div class="cell-time {{ cell[3] }}"></div>
+              <div class="cell-time {{ cell[4] }}"></div>
+              <div class="cell-time {{ cell[5] }}"></div>
+              <div class="cell-time {{ cell[6] }}"></div>
+              <div class="cell-time {{ cell[7] }}"></div>
+              <div class="cell-time {{ cell[8] }}"></div>
+              <div class="cell-time {{ cell[9] }}"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line-top-sprites {{ hideStartScreen }}">
+        <div class="title">
+          <div class="title-1 animate__animated {{ title1Behavior }}">
+            <img class="title-img" src="./assets/img/jan-pixel.png">
+          </div>
+          <div class="title-2 animate__animated {{ title2Behavior }}">
+            <img class="title-img" src="./assets/img/ken-pixel.png">
+          </div>
+          <div class="title-3 animate__animated {{ title3Behavior }}">
+            <img class="title-img" src="./assets/img/pon-pixel.png">
+          </div>
+          <div class="title-4 animate__animated {{ startBehavior }}" (click)="start()">
+            <img class="start-img" src="./assets/img/start-game.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mountain">
+    <img class="mountain-img" src="./assets/img/mountain2.png">
+  </div>
+  <div class="ground">
+    <div class="player-control {{ startScreen }}">
+      <div class="change-ctrl {{ hideButton }}" (click)="changeThink()">
+        <img class="change-btn {{ hideChoiceBtn }}" src="./assets/img/change.png">
+      </div>
+      <div class="start-game {{ startScreen }}" (click)="startGame()">
+        <img class="start-btn" src="./assets/img/start.png">
+      </div>
+    </div>
+    <div class="thinking {{ startScreen }}">
+      <img class="thinking-left-img thinking-img" src="{{ thinkPlayerImg }}">
+      <img class="thinking-right-img thinking-img" src="{{ thinkComputerImg }}">
+    </div>
+    <div class="characters {{ startScreen }}">
+      <img class="player-img player-position characters-img" src="{{ playerCharacterImg }}">
+      <img class="robot-img characters-img" src="{{ computerCharacterImg }}">
+    </div>
+    <div class="score {{ startScreen }}">
+      <div class="identifier player">
+        <p class="game-info name-player">PLAYER</p>
+        <p class="game-info points-player">SCORE {{ playerScore }}</p>
+      </div>
+      <div class="identifier reset-space" (click)="resetGame()">
+        <p class="game-info reset-btn">RESET</p>
+        <p class="game-info">SCORE</p>
+      </div>
+      <div class="identifier computer">
+        <p class="game-info name-computer">COMPUTER</p>
+        <p class="game-info points-computer">SCORE {{ computerScore }}</p>
+      </div>
+    </div>
+    <img class="ground-img" src="./assets/img/ground.png">
+  </div>
+</div>
+<ng-template #choosePlayerModal>
+  <div class="modal-header">
+    <img class="title-modal" src="./assets/img/choose.png">
+  </div>
+  <div class="modal-body text-center">
+    <div class="player-img">
+      <img class="player-img animate__animated {{ moveBehavior }}" src="{{ playerCharacterImg }}">
+    </div>
+    <p class="player-name animate__animated {{ moveBehavior }}">{{ playerCharacterName }}</p>
+  </div>
+  <div class="modal-footer center-modal-componet">
+    <button type="button" class="btn btn-success btn-choose" (click)="selectPlayer('L')">Previous</button>
+    <button type="button" class="btn btn-primary btn-choose" (click)="selectPlayer('OK')">OK!</button>
+    <button type="button" class="btn btn-success btn-choose" (click)="selectPlayer('R')">Next</button>
+  </div>
+</ng-template>
